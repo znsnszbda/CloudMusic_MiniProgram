@@ -1,0 +1,26 @@
+
+<view class="container">
+  <view class="wrapper">
+    <view class="left-top-sign">LOGIN</view>
+    <view class="welcome">
+      欢迎回来！
+    </view>
+    <view class="input-content">
+      <view class="input-item">
+        <input type="text" placeholder="请输入手机号码" bindinput="handleInput" id="phone" data-type="phone"/>
+        <button class="get-captcha" bindtap="handleCaptcha" disabled="{{disabledGetCaptcha}}">获取验证码</button>
+      </view>
+      <view class="input-item">
+        <input type="number"  placeholder="请输入验证码" bindinput="handleInput" id="password" data-type="captcha"/>
+      </view>
+    </view>
+    <button class="confirm-btn" bindtap="login">登录</button>
+    <view class="toPassword" bindtap="toLoginPassword">
+      密码登录
+    </view>
+  </view>
+  <view class="register-section">
+    还没有账号?
+    <text >马上注册</text>
+  </view>
+</view>

@@ -1,0 +1,111 @@
+/* pages/video/video.wxss */
+.videoContainer {
+  padding: 0 20rpx;
+}
+
+/* 头部区域 */
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+}
+.header image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.header .search {
+  flex: 1;
+  border: 1rpx solid #f5f5f5;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 50rpx;
+  margin: 0 10rpx;
+  border-radius: 5rpx;
+}
+
+/* 导航区域 */
+.navScroll {
+  display: flex;
+  /* 不让文本换行 */
+  white-space: nowrap;  
+  height: 70rpx;
+}
+
+.navItem {
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.navItem .actived {
+  border-bottom: 1rpx solid #dd001b;
+}
+
+/* 视频列表区域 */
+.videoScroll {
+  /* 注意calc() 计算时减号前后各有一个空格，否则会失效 */
+  height: calc(100vh - 124rpx);
+}
+.videoItem .common{
+  width: 700rpx;
+  height: 360rpx;
+  border-radius: 10rpx;
+  margin-top: 10rpx;
+}
+.videoItem .content {
+  font-size: 26rpx;
+  max-width: 500rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin: 20rpx 0;  
+}
+.videoItem .footer {
+  display: flex;
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-top: 1rpx solid #a5a5a5;
+  padding: 15rpx 0;
+}
+.videoItem .footer .avatar {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  /* vertical-align: middle; */
+}
+.videoItem .footer .nickName {
+  font-size: 24rpx;
+  padding-left: 10rpx;
+  flex: 1;
+}
+
+.videoItem .footer .comments_praised {
+  display: flex;
+}
+.comments_praised .item {
+  font-size: 28rpx;
+  position: relative;
+  margin-left: 50rpx;
+}
+.comments_praised .item .count {
+  position: absolute;
+  top: -20rpx;
+  left: 30rpx;
+  font-size: 20rpx;
+}
+
+.comments_praised .btn {
+  /* background-color: transparent; */
+  border: 0;
+  color: white;
+  padding: 0;
+  line-height: 50rpx;
+}
+
+.videoItem:last-child  {
+  padding-bottom: 120rpx;
+}
