@@ -22,9 +22,7 @@
 
 ###### 整体框架
 
-一进小程序显示首页，小程序底部有个tab切换栏，实现 主页--视频页--个人中心页切换：
-
-<img src="C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20220905164125249.png" alt="image-20220905164125249" style="zoom:50%;" />
+一进小程序显示首页，小程序底部有个tab切换栏，实现 主页--视频页--个人中心页切换
 
 ###### 主页
 
